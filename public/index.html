@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+     <head>
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <meta name="author" content="GrupoPRG3">
+          <meta name="description" content="Asesoramiento juridico con abogados profesionales.">
+          <title>Firma de Abogados CNS</title>
+          <link rel="stylesheet" href="layout.css"></link>
+     </head>
+
+     <body>
+          <header>
+               <img src="assets/images/Logo.jpg" alt="Logo de la empresa" id="logoEmpresa">
+               <div>
+                    <nav>
+                         <ul id="main-menu">
+                              <li>ACERCA DE LA FIRMA</li>
+                              <li>NUESTROS PROFESIONALES</li>
+                              <li>NOTICIAS</li>
+                         </ul>
+                    </nav>
+               </div>
+               <div>
+                    <nav class="socialSocios">
+                         <a target="_blank" href="https://www.facebook.com/"><img src="assets/images/icons8-facebook.svg" alt="Logo de Facebook"></a>
+                         <a target="_blank" href="https://twitter.com/"><img src="assets/images/icons8-twitter.svg" alt="Logo de Twitter"></a>
+                         <a target="_blank" href="https://linkedid.com/"><img src="assets/images/icons8-linkedin.svg" alt="Logo de LinkedId"></a>
+                         <a target="_blank" href="https://www.instagram.com/"><img src="assets/images/icons8-instagram.svg" alt="Logo de Instagram"></a>
+                    </nav>
+               </div>
+          </header>
+
+          <main>
+               <h1>Asesoria Juridica</h1>
+               <h2>Registro de datos</h2>
+               <p>Por favor diligencie el siguiente formulario para poder guardar su caso y permitirle entrar en contacto con uno de nuestros profesionales para poder brindarle ayuda</p>
+               <form action="/register" method="POST">
+                    <fieldset>
+                         <div class="section">
+                              <legend>Datos Personales</legend>
+                              <div class="title">
+                                   <label for="name" class="">Nombres</label>
+                              </div>
+                              <div class="field">
+                                   <input type="text" name="name" id="name">
+                              </div>
+                         </div>
+                         <div class="section">
+                              <div class="title">
+                                   <label for="surname">Apellidos</label>
+                              </div>
+                              <div class="field">    
+                                   <input type="text" name="surname" id="surname">
+                              </div>     
+                         </div>
+                         <div class="section">
+                              <div class="title">
+                                   <label for="email">Correo electronico</label>
+                              </div>
+                              <div class="field">  
+                                   <input type="email" name="email" id="email">
+                              </div>     
+                         </div>
+                         <div class="section">
+                              <div class="title">
+                                   <label for="citizenshipCard">Numero de identificación de C.C</label>
+                              </div>
+                              <d class="field">
+                                   <input type="text" name="idUser" id="idUser">
+                              </div>
+                         </div>
+                         <div class="section">
+                              <div class="title">
+                                   <label for="phoneNumber">Numero de celular</label>
+                              </div>
+                              <div class="field">
+                                   <input type="text" name="phoneNumber" id="phoneNumber">
+                              </div>
+                         </div>
+                         
+                         <div>
+                              <label for="identificationDocument">Por favor adjunte un documento que contenga su cedula de ciudadania visible por ambas caras.</label>
+                              <input type="file" name="" id="identificationDocument">
+                         </div>
+                    </fieldset>
+                    <fieldset>
+                         <div class="section">
+                              <legend>Datos sobre el juicio</legend>
+                              <div class="title">
+                                   <label for="caseDescription">Por favor en el siguiente recuadro describa el caso en cuestion.</label>
+                              </div>
+                              <div class="field">
+                                   <textarea name="" id="caseDescription" cols="70" rows="10"></textarea>
+                              </div>     
+                         </div>
+                         <div class="section">
+                              <h3>Tipos de juicio</h3>
+                              <p>Para poder obtener los datos correctos del problema y la ayuda que desea adquirir es conveniente que antes de seleccionar el tipo de caso al cual pertenece su problema lea la siguiente informacion: </p>
+                              <br>
+                              <p>
+                                   Tipos de juicio: Penal
+                                   En este caso, el juicio penal es el que se produce cuando se ha cometido algún delito o falta como por ejemplo robos, asesinatos, daños importantes, falsificaciones, tráfico de drogas, etc.
+                                   <br>
+                                   <br>
+                                   Tipos de juicio: Contencioso-administrativo
+                                   Este tipo de juicio se refieren a reclamaciones entre particulares y la Administración (central, autonómica o local). Para poder optar a un juicio contecioso-administrativo se deben agotar primero todos los trámites administrativos previos. Su desarrollo es similar al del juicio civil.
+                                   <br>
+                                   <br>
+                                   Tipos de juicio: laboral
+                                   Se producen cuando se reclaman asuntos relacionados con los derechos derivados del trabajo y la Seguridad Social como por ejemplo despido, sanciones laborales, jubilaciones, orfandad…
+                                   <br><br>
+                              </p>
+                              <legend>Tipo de juicio</legend>
+                              <label>Penal
+                                   <input type="radio" name="caseType" value="penal">
+                              </label>
+                              <label>contecioso-administrativo
+                                   <input type="radio" name="caseType" value="contencioso-administrativo">
+                              </label>
+                              <label>Laboral
+                                   <input type="radio" name="caseType" value="laboral">
+                              </label>
+                         </div>
+                    </fieldset>
+                    <label for="process">Formulario</label>
+                    <meter id="process" min="0" max="100" value="0" low="30" high="75" optimum="50">
+                    </meter>
+                    <br>
+                    <div class="section">  
+                         <div class="button">
+                              <input type="submit" value="Register">
+                         </div>
+                    </div>
+     
+               </form>
+          </main>
+          <footer></footer>
+     </body>
+</html>
